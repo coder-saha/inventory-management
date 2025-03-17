@@ -1,0 +1,479 @@
+/* Generic Styles */
+
+body {
+  max-width: 1920px;
+  margin: auto;
+  padding: 0;
+}
+
+.footer-container {
+  bottom: 100px;
+  margin: 10px;
+  position: absolute;
+  left: calc((100% - 227px) / 2);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.btn:hover {
+  text-decoration: none;
+}
+
+.header-container {
+  padding: 15px;
+}
+
+.heading-main {
+  text-align: center;
+}
+
+.heading-menu {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+}
+
+section.content {
+  padding: 15px;
+}
+
+.logo-container {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.header-images {
+  height: 80px;
+  width: auto;
+}
+
+.sd-logo-container {
+  text-align: center;
+}
+
+.sd-logo {
+  height: 25px;
+  width: auto;
+}
+
+.import-form-container {
+  margin-bottom: 20px;
+}
+
+.pagination-container {
+  float: right;
+  margin: 5px;
+}
+
+.pagination-box {
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+}
+
+.pagination-drop {
+  width: 90px;
+}
+
+.logo-container.position-right {
+  float: right;
+}
+
+.logo-container.position-right img {
+  height: 70px;
+}
+
+.hidden {
+  display: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* Button styles */
+.action-btn:hover {
+  text-decoration: none;
+}
+
+/* Login styles */
+
+.login-container {
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 250px auto;
+  position: relative;
+  width: 400px;
+  height: 320px;
+}
+
+.login-header {
+  background-color: black;
+  border-radius: 4px 4px 0 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.login-form {
+  padding: 20px 20px 70px;
+  border-radius: 0 0 4px 4px;
+}
+
+.btn-login {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+#csvFile::-webkit-file-upload-button {
+  display: none;
+}
+
+#csvFile::file-selector-button {
+  display: none;
+}
+
+#records-limit {
+  width: 80px;
+}
+
+.find-certificate-container {
+  padding: 30px 60px;
+  max-width: 70%;
+  margin: auto;
+}
+
+.edit-form-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.sale-form-container,
+.purchase-form-container {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.btn-search {
+  cursor: pointer;
+}
+
+.btn-update,
+.btn-cancel,
+.btn-dashboard {
+  float: right;
+  margin-left: 5px;
+}
+
+.btn-apply {
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+
+.btn-dashboard {
+  margin-bottom: 5px;
+}
+
+.csv-link {
+  margin-left: 20px;
+}
+
+.btn-pagination {
+  background-color: white;
+  border: 1.5px solid skyblue;
+  border-radius: 4px;
+  color: skyblue;
+  height: 40px;
+  width: 40px;
+}
+
+.btn-pagination:hover {
+  color: white;
+  background-color: skyblue;
+}
+
+.btn-pagination:disabled,
+.btn-pagination[disabled] {
+  background-color: lightgray;
+  border-color: gray;
+  color: gray;
+}
+
+.btn-page-apply {
+  width: 60px;
+}
+
+.alert-box {
+  margin-top: 45px;
+}
+
+.verified-box {
+  border-color: green;
+  color: green;
+  font-size: 20px;
+  margin: 25px auto;
+  width: 128px;
+}
+
+.table-scroll {
+  border: 1px solid black;
+  border-radius: 5px;
+  max-height: 1110px;
+  overflow-y: auto;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.search-list .table-scroll {
+  max-height: 300px;
+}
+
+.table-scroll table {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.table-scroll thead {
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+.table-scroll th {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.table-scroll th:first-child {
+  border-left: 1px solid black;
+}
+
+.table-scroll th:last-child {
+  border-right: 1px solid black;
+}
+
+.table-scroll td {
+  border-bottom: 0.5px solid black;
+  padding: 2px 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pagination {
+  margin: 5px;
+  padding: 5px;
+}
+
+.pagination input {
+  width: 40px;
+  margin: 5px;
+  text-align: center;
+}
+
+.button-div {
+  display: inline-block;
+  width: 20%;
+}
+
+.search-div {
+  display: inline-block;
+  width: 26%;
+}
+
+.pagination-div {
+  display: inline-block;
+}
+
+/* Input Box Styles */
+.price-input {
+  display: inline-block;
+  width: 100px;
+}
+
+.quantity-input {
+  display: inline-block;
+  width: 50px;
+}
+
+/* Drop Down Styles */
+.boolean-drop-down {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+}
+
+.employment-drop-down,
+.status-drop-down {
+  display: inline-block;
+  text-align: center;
+  width: 125px;
+}
+
+.session-drop-down,
+.center-drop-down,
+.project-drop-down,
+.sector-drop-down,
+.jobrole-drop-down {
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+}
+
+/* Dashboard Styles */
+.analytics-container {
+  display: inline-block;
+  width: 100%;
+}
+.slab {
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  height: 120px;
+  margin: 15px auto;
+  padding: 10px 40px;
+  position: relative;
+  width: 500px;
+}
+.trained-color {
+  color: white;
+  background-color: rgb(16, 150, 24);
+}
+.certified-color {
+  color: white;
+  background-color: rgb(255, 153, 0);
+}
+.placed-color {
+  color: white;
+  background-color: rgb(220, 57, 18);
+}
+.enrolled-color {
+  color: white;
+  background-color: rgb(51, 102, 204);
+}
+.count-value {
+  font-size: 40px;
+  font-weight: bold;
+}
+.count-label {
+  font-size: 20px;
+}
+#pieChart {
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 20px;
+  width: 650px;
+}
+
+/* Billing Styles */
+.print-section {
+  border: 1px solid black;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.company-header-section {
+  background-color: beige;
+  padding: 0 10px;
+}
+
+.company-name {
+  color: maroon;
+  font-size: 20px;
+}
+
+.invoice-detail-section,
+.address-section {
+  padding: 0 10px;
+}
+
+.invoice-no,
+.invoice-date {
+  color: maroon;
+}
+
+.print-section .product-list {
+  padding: 0 5px;
+}
+
+.bill-total {
+  padding-right: 40px;
+}
+
+.action-buttons {
+  margin: 0 20%;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .button-div {
+    width: 30%;
+  }
+
+  .search-div {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btn-search {
+    float: right;
+  }
+
+  .button-div {
+    width: 40%;
+    margin-bottom: 5px;
+  }
+
+  .search-div {
+    width: 59%;
+    margin-bottom: 5px;
+  }
+
+  .find-certificate-container {
+    padding: 15px;
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .button-div,
+  .search-div {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .find-certificate-container {
+    padding: 10px;
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media print {
+  .not-printable {
+    display: none;
+  }
+  .print-section {
+    margin: 5px;
+    max-width: unset;
+  }
+  .company-header-section {
+    margin: 0 1px;
+  }
+}
