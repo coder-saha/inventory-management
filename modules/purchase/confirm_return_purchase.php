@@ -45,7 +45,7 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
       }
       if (mysqli_affected_rows($conn) > 0) {
         unset($_SESSION["returnPurchaseProductList"]);
-        ("Location: ../main/dashboard");
+        header("Location: ../main/dashboard");
       }
     } catch (Exception $e) {
       writeLog($e->getMessage());

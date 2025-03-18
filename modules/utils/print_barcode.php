@@ -69,8 +69,6 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
 		</style>
 	</head>
 
-	<!-- <body onload="window.print();"> -->
-
 	<body>
 		<div class="print-section">
 			<?php
@@ -107,7 +105,7 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
 						$sku1 = $item1["sku"];
 						?>
 						<div class="barcode-item">
-							<div class="barcode-header">Marble Marble Marble Marble Marble Marble Marble Marble Marble Marble Marble</div>
+							<div class="barcode-header"><?= $product_name1 ?></div>
 							<div class="barcode-image"><?= bar128($sku1) ?></div>
 							<div class="barcode-footer"><?= $sku1 ?></div>
 						</div>
