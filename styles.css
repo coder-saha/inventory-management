@@ -147,12 +147,6 @@ section.content {
   width: 80px;
 }
 
-.find-certificate-container {
-  padding: 30px 60px;
-  max-width: 70%;
-  margin: auto;
-}
-
 .edit-form-container {
   max-width: 800px;
   margin: auto;
@@ -443,12 +437,6 @@ section.content {
     width: 59%;
     margin-bottom: 5px;
   }
-
-  .find-certificate-container {
-    padding: 15px;
-    max-width: 80%;
-    margin: auto;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -457,11 +445,12 @@ section.content {
     width: 100%;
     margin-bottom: 5px;
   }
-
-  .find-certificate-container {
-    padding: 10px;
-    max-width: 90%;
-    margin: auto;
+  .edit-form-container,
+  .sale-form-container,
+  .purchase-form-container {
+    max-width: unset;
+    margin: unset;
+    padding: 0;
   }
 }
 

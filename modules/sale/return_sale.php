@@ -195,11 +195,18 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
       }
 
       //barcode script
+      const screenWidth = window.innerWidth;
+      let scannerWidth = 600;
+      let scannerHeight = 200;
+      if (screenWidth < 600) {
+        scannerWidth = screenWidth - 45;
+        scannerHeight = 150;
+      }
       const scanner = new Html5QrcodeScanner('barcode-reader', {
         // Scanner will be initialized in DOM inside element with id of 'reader'
         qrbox: {
-          width: 600,
-          height: 200,
+          width: scannerWidth,
+          height: scannerHeight,
         },  // Sets dimensions of scanning box (set relative to reader element width)
         fps: 120, // Frames per second to attempt a scan
       });
