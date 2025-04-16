@@ -35,7 +35,6 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
     <header>
       <div class="header-container">
         <div class="heading-menu">
-          <a class="btn btn-primary" href="../product/manage_products">Go to Products</a>
           <a class="btn btn-secondary" href="../login/logout">Logout</a>
         </div>
         <div class="sd-logo-container">
@@ -50,15 +49,15 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
     </header>
     <section class="content">
       <h3>Dashboard</h3>
-      <a class="btn btn-primary" href="../profile/company_profile">Profile</a>
-      <a class="btn btn-primary" href="../product/manage_products">Products</a>
-      <a class="btn btn-primary" href="../supplier/manage_suppliers">Suppliers</a>
-      <a class="btn btn-primary" href="../purchase/manage_purchases">Purchases</a>
-      <a class="btn btn-primary" href="../purchase/return_purchase">Purchase Return</a>
-      <a class="btn btn-primary" href="../customer/manage_customers">Customers</a>
-      <a class="btn btn-primary" href="../sale/manage_sales">Sales</a>
-      <a class="btn btn-primary" href="../sale/return_sale">Sale Return</a>
-      <a class="btn btn-primary" href="../inventory/manage_inventory">Inventory</a>
+      <a class="btn btn-primary mb-2" href="../profile/company_profile">Profile</a>
+      <a class="btn btn-primary mb-2" href="../product/manage_products">Products</a>
+      <a class="btn btn-primary mb-2" href="../supplier/manage_suppliers">Suppliers</a>
+      <a class="btn btn-primary mb-2" href="../purchase/manage_purchases">Purchases</a>
+      <a class="btn btn-primary mb-2" href="../purchase/return_purchase">Purchase Return</a>
+      <a class="btn btn-primary mb-2" href="../customer/manage_customers">Customers</a>
+      <a class="btn btn-primary mb-2" href="../sale/manage_sales">Sales</a>
+      <a class="btn btn-primary mb-2" href="../sale/return_sale">Sale Return</a>
+      <a class="btn btn-primary mb-2" href="../inventory/manage_inventory">Inventory</a>
       <br />
       <br />
       <h4>Inventory</h4>

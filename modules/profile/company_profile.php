@@ -68,7 +68,7 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
       <header>
         <div class="header-container">
           <div class="heading-menu">
-            <a class="btn btn-primary" href="../main/dashboard">Back to Home</a>
+            <a class="btn btn-primary" href="../main/dashboard">Back to Dashboard</a>
             <a class="btn btn-secondary" href="../login/logout">Logout</a>
           </div>
           <div class="sd-logo-container">

@@ -452,6 +452,9 @@ section.content {
     margin: unset;
     padding: 0;
   }
+  .heading-menu {
+    top: 80px;
+  }
 }
 
 @media print {
