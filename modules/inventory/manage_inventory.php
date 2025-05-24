@@ -49,9 +49,20 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
       </div>
     </header>
     <section class="content">
-    <a class="btn btn-primary" href="../main/dashboard">Back to Dashboard</a>
+      <a class="btn btn-primary" href="../main/dashboard">Back to Dashboard</a>
       <h3>Manage Inventory</h3>
       <br />
+      <div class="search-div">
+        <div class="input-group">
+          <input type="text" class="form-control" name="productId" id="productId" value=""
+            placeholder="Search Products" />
+          <span class="input-group-text btn-search" name="search" title="Search Product" onclick="searchProduct()">
+            <i class="bi bi-search"></i>
+          </span>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-dashboard hidden"
+        href="manage_inventory">Back to Inventory</a>
       <?php
       if (mysqli_num_rows($result) > 0) {
         ?>
@@ -76,7 +87,7 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
                       <?php echo $row['product_name']; ?>
                     </td>
                     <td>
-                      <?php echo $row['quantity']==="0" ? "Out of Stock" : $row['quantity']; ?>
+                      <?php echo $row['quantity'] === "0" ? "Out of Stock" : $row['quantity']; ?>
                     </td>
                     <td>
                       <?php echo $row['date_updated']; ?>
@@ -103,7 +114,32 @@ if (isset($_SESSION["user_id"]) && isset($_SESSION["username"])) {
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
     <script>
+      const dashboardBtn = document.querySelector(".btn-dashboard");
+      const productId = document.getElementById("productId");
 
+      productId.addEventListener("keyup", function (event) {
+        if (event.keyCode == 13) {
+          searchProduct();
+        }
+      });
+
+      function searchProduct() {
+        const id = productId.value.trim();
+        if (id !== "" && id !== null) {
+          dashboardBtn.classList.remove("hidden");
+          productId.value = id;
+          if (id !== "") {
+            $.post("fetch_inventory",
+              {
+                "productId": id
+              },
+              function (data) {
+                $(".inventory-list").html(data);
+              }
+            )
+          }
+        }
+      }
     </script>
   </body>
 
